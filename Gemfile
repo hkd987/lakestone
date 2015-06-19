@@ -18,6 +18,8 @@ gem 'high_voltage'
 gem 'simple_form'
 gem 'unicorn'
 gem 'unicorn-rails'
+gem 'devise'
+gem 'devise_invitable'
 group :development do
   gem 'better_errors'
   gem 'guard-bundler'
