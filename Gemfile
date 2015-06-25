@@ -20,6 +20,7 @@ gem 'unicorn'
 gem 'unicorn-rails'
 gem 'devise'
 gem 'devise_invitable'
+gem 'bootstrap_form'
 group :development do
   gem 'better_errors'
   gem 'guard-bundler'

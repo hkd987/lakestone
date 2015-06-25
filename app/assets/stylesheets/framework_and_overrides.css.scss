@@ -45,21 +45,7 @@ section {
   margin-top: 20px;
   }
 
-#page_top {
-    height: 750px;
-}
 
-#page_about {
-  height: 750px;
-}
-
-#page_service {
-  height: 750px;
-}
-
-#page_contact {
-  height: 750px;
-}
 
 .cover-pad {
   padding-top: 20px;
@@ -318,4 +304,9 @@ section {
   .timeline > li .line {
     display: none;
   }
+}
+
+.newsletter {
+  padding: 20px 0px 40px 0px;
+  
 }

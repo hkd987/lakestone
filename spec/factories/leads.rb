@@ -1,8 +1,7 @@
 FactoryGirl.define do
-  factory :contact do
+  factory :lead do
     name "MyString"
 email "MyString"
-notes "MyText"
   end
 
 end
