@@ -4,11 +4,11 @@
     <th>E-Mail</th>
     <th>Edit</th>
   </tr>
-<% @leads.each do |lead| %>
+<% @lead.each do |lead| %>
 <tr>
   <td><%= lead.name %></td>
   <td><%= lead.email %></td>
-  <td> </td>
+  <td><%= link_to "Edit", edit_lead_path(@lead) %> </td>
 </tr>
 <% end %>
 </tbody>

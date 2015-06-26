@@ -2,9 +2,6 @@
   <span class="text-muted text-center">Welcome</span>
 </h1>
 
-<h2 class="text-center">Newsletter Table</h2>
-<%= render 'admin/leadtable' %>
+<%= link_to "Newsletter Data", leads_path(@lead) %>
 
-
-<h2 class="text-center">Contact Table</h2>
-<%= render 'admin/contacttable' %>
+<%= link_to "Contact Data", contacts_path(@contact) %>

@@ -1,5 +1,9 @@
 class LeadsController < ApplicationController
   def index
+    @lead = Lead.all
+  end
+
+  def new
     @lead = Lead.new
   end
 
@@ -9,11 +13,13 @@ class LeadsController < ApplicationController
       cookies[:saved_lead] = true
       redirect_to root_path
     else
-      redirect_to leads_path, alert: "Failed to submit :-("
+      redirect_to new_lead_path, alert: "Failed to submit :-("
     end
   end
 
-
+  def edit
+    @lead = Lead.find(params[:id])
+  end
 
 
   private

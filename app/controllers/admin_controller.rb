@@ -1,6 +1,7 @@
 class AdminController < ApplicationController
   def index
-      @leads = Lead.all
       @contacts = Contact.all
+      @leads = Lead.all
     end
+
 end

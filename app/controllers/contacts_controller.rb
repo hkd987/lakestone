@@ -1,7 +1,12 @@
 class ContactsController < ApplicationController
   def index
+    @contact = Contact.all
+  end
+
+  def new
     @contact = Contact.new
   end
+
 
 
   def create
@@ -10,7 +15,7 @@ class ContactsController < ApplicationController
       cookies[:saved_contact] = true
       redirect_to root_path
     else
-      redirect_to contacts_path, alert: "Failed to submit :-("
+      redirect_to new_contact_path, alert: "Failed to submit :-("
     end
   end
 

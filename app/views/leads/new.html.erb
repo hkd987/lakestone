@@ -1,0 +1,18 @@
+<div class="newsletter">
+<h1 class="heading text-center">Newsletter
+  <span class="text-muted text-center">Sign Up Now</span>
+</h1>
+
+
+<div class="container text-center">
+  <%= render 'layouts/messages' %>
+</div>
+
+<% if cookies[:saved_lead] %>
+  <h4 class="text-center"> Thanks for signing up! </h4>
+<% else %>
+  <%= render 'visitors/formlead' %>
+      <% end %>
+  </div>
+  </div>
+  </div>
